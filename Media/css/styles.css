@@ -1,0 +1,170 @@
+@import url('/Global/css/mobile/640_responsive_Grid.css');
+/*@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700');*/
+@import url('buttons.css');
+
+/* Type Control
+--------------------------------------------------*/
+
+sup { font-size: 50%;}
+img, object, embed { max-width: 100%; height: auto; }
+object, embed { height: 100%; }
+img { -ms-interpolation-mode: bicubic; display: inline-block; vertical-align: middle; }
+*, a, a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+.gf { font-family: 'PT Sans', sans-serif; }
+
+
+/*jQuery Mobile*/
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page { position: relative;}
+.ui-content { padding: 0;}
+.ui-panel-display-overlay { background: #FFF;}
+.ui-panel-inner {}
+.ui-panel.ui-panel-open {
+    position:fixed;
+}
+.ui-panel-inner {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.ui-shadow { box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; }
+
+
+/*POV*/
+.pov-info { background: #FFF; padding: 18px 25px; text-align: left; }
+.pov-info h2 { font-size: 15px; font-family: "Futura Bold", "Trebuchet MS", Arial, sans-serif; font-weight: 800; color: #ed2633; letter-spacing: -0.01em; }
+.pov-info p { font-size: 9px; color: #626262; line-height: 1.2; }
+
+fieldset.ui-controlgroup { margin: 0;}
+
+/*Battery Selector page*/
+.battery-selector .ui-btn-inner {
+    font-size: 20px; text-transform: uppercase; font-weight: bold;
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top,  #f0f0f0 0%, #ebebeb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#ebebeb));
+    background: -webkit-linear-gradient(top,  #f0f0f0 0%,#ebebeb 100%);
+    background: -o-linear-gradient(top,  #f0f0f0 0%,#ebebeb 100%);
+    background: -ms-linear-gradient(top,  #f0f0f0 0%,#ebebeb 100%);
+    background: linear-gradient(to bottom,  #f0f0f0 0%,#ebebeb 100%);
+}
+
+.black-bar {
+    background: #262626;
+    background: -moz-linear-gradient(top,  #262626 0%, #262626 49%, #000000 50%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#262626), color-stop(49%,#262626), color-stop(50%,#000000), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #262626 0%,#262626 49%,#000000 50%,#000000 100%);
+    background: -o-linear-gradient(top,  #262626 0%,#262626 49%,#000000 50%,#000000 100%);
+    background: -ms-linear-gradient(top,  #262626 0%,#262626 49%,#000000 50%,#000000 100%);
+    background: linear-gradient(to bottom,  #262626 0%,#262626 49%,#000000 50%,#000000 100%);
+}
+
+/*Battery Result page*/
+.resultTitle {
+    padding: 12px 0;
+}
+.resultTitle h3 {
+    font-size: 16px;
+    font-family: "Futura Bold", "Trebuchet MS", Arial, sans-serif;
+    color: #FFF;
+}
+
+/*Battery Item Details*/
+#TRM_Battery_Details { background: #FFF; }
+.battery-details-list li { border-bottom: 1px solid #e1e1e1; overflow: hidden;}
+.battery-details-item {  margin: 10px 20px 15px; overflow: hidden; }
+.battery-thumb { width: 38%; float: left; margin-right:  10px; }
+.battery-info { float: left; width:  57%; }
+.battery-info > h4 { color: #ed2633; font-size: 12px; font-weight: bold; }
+.battery-info > h5 { color: #000; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+.battery-info > h5 span.battery-info-model { color: #626262; font-size: 12px; display: inline; }
+.battery-info .btn { padding: 5px 15px;}
+.battery-selected { background: #EEE; overflow: hidden; padding: 8px 15px 13px;}
+.battery-selected > p { color: #363636; font-size: 9px; text-transform: uppercase; margin-bottom: 0; }
+#battery-spec { display: none; }
+.TRM_detail-list { color: #626262; margin-bottom: 1em; font-size: 9px;}
+.TRM_detail-list li { border-bottom: none; line-height: 1.5;}
+
+/*Selected Battery*/
+.selectedMake { width: 33%; float: left; }
+.selectedYear { width: 13%; float: left; }
+.selectedModel { width: 32%; float: left; }
+.selectedEngine { width: 22%; float: left; }
+.mSelected { font-size: 11px; }
+.mSelected p { font-weight: bold; margin: 0;}
+.highlightSelect { font-size: 13px; color: #ed2633;}
+
+/*Modify Selection*/
+.resetBattery .ui-btn-inner {
+    background: #058ed5; -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    font-family: "Futura Bold", "Trebuchet MS", Arial, sans-serif;
+}
+.resetBattery { margin: 0; border: none;}
+
+/*Bottom Mod*/
+.ui-collapsible-set {
+    margin: 0;
+}
+.bottom-mod .ui-collapsible-content {
+    padding: 0;
+}
+.bottom-mod .ui-btn-inner, .bottom-mod .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+    padding: 0;
+    border-top: none;
+}
+.ui-collapsible-set .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+    border-top-width: 0:
+}
+
+.disclaimer { margin-top: 0;}
+.disclaimerToggle{
+    width: 100%;
+    background: #ccc;
+    /*border-radius: 6px 6px 0 0;*/
+    padding: 10px 0;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    color: #6c6c6c;
+    font-weight: bold;
+}
+
+/* Media Queries
+--------------------------------------------------*/
+
+
+@media only screen and (min-width: 480px) {
+}
+
+/* Medium Displays: 768px - 1279px */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 1280px) {
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (orientation: landscape) {
+}
+
+@media only screen and (orientation: portrait) {
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+}
